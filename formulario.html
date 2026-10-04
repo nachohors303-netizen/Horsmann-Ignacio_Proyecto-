@@ -1,0 +1,149 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario de inscripción</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Formulario de inscripción</h1>
+
+        <form>
+
+            <div class="campo">
+                <label for="nombre">Nombre y apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+
+            <div class="campo">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="campo">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="campo">
+                <label for="curso">Curso al que desea inscribirse:</label>
+
+                <select id="curso" name="curso" required>
+                    <option value="">Seleccione un curso</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="programacion">Programación</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+
+                <p>Turno preferido:</p>
+
+                <label>
+                    <input type="radio" name="turno" value="manana">
+                    Mañana
+                </label>
+
+                <label>
+                    <input type="radio" name="turno" value="tarde">
+                    Tarde
+                </label>
+
+                <label>
+                    <input type="radio" name="turno" value="noche">
+                    Noche
+                </label>
+
+            </div>
+
+            <div class="grupo">
+
+                <p>Conocimientos previos:</p>
+
+                <label>
+                    <input type="checkbox" name="conocimientos" value="html">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="conocimientos" value="css">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="conocimientos" value="javascript">
+                    JavaScript
+                </label>
+
+                <label>
+                    <input type="checkbox" name="conocimientos" value="ninguno">
+                    Ninguno
+                </label>
+
+            </div>
+
+            <div class="campo">
+
+                <label for="motivo">
+                    ¿Por qué desea realizar el curso?
+                </label>
+
+                <textarea id="motivo" name="motivo" rows="6"></textarea>
+
+            </div>
+
+            <div class="terminos">
+
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los términos y condiciones.
+                </label>
+
+            </div>
+
+            <div class="botones">
+
+                <button type="submit">
+                    Enviar inscripción
+                </button>
+
+                <button type="reset">
+                    Limpiar formulario
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+```
